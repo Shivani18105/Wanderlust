@@ -58,7 +58,6 @@ router
 //Edit route
 router.get(
   "/:id/edit",
-  validateListing,
   isLoggedIn,
   isOwner,
   wrapAsync(listingController.editListing),
